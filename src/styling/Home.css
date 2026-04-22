@@ -1,0 +1,48 @@
+/* Reset some default spacing */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: var(--bg)
+
+}
+
+/* Page wrapper */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header (logo + nav) */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  gap: 20px;
+}
+
+/* Logo */
+.logo {
+  max-width: 25%; /* adjust based on your logo */
+  height: auto;
+}
+
+/* Main content column */
+.content {
+  width: 100%;
+  max-width: 800px; /* controls your middle column width */
+  padding: 30px 20px;
+}
+
+.home-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.home-images img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
